@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Open source by Boffin Coders: TypeScript, Dart and Flutter packages</title>
+<meta name="description" content="MIT-licensed packages from Boffin Coders: financial ratios for TypeScript, an Akamai NetStorage client and CLI, and a persistent task queue for Dart and Flutter.">
+<link rel="canonical" href="https://boffincoders.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Open source by Boffin Coders">
+<meta property="og:description" content="MIT-licensed packages from Boffin Coders: financial ratios for TypeScript, an Akamai NetStorage client and CLI, and a persistent task queue for Dart and Flutter.">
+<meta property="og:url" content="https://boffincoders.github.io/">
+<meta property="og:site_name" content="Open source by Boffin Coders">
+<meta property="og:image" content="https://boffincoders.github.io/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Open source by Boffin Coders: fundamental-analysis, ts-netstorageapi-akamai and durable_queue">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@boffincoders">
+<meta name="twitter:image" content="https://boffincoders.github.io/og.png">
+<meta name="author" content="Boffin Coders">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[
+{"@type":"Organization","@id":"https://boffincoders.com/#organization","name":"Boffin Coders","url":"https://boffincoders.com","logo":"https://boffincoders.github.io/brand/bc-gold.png","slogan":"We design and build websites, web applications and mobile apps, and run their SEO, for businesses and agencies.","description":"We design and build websites, web applications and mobile apps, and run their SEO, for businesses and agencies.","sameAs":["https://www.linkedin.com/company/boffincoders/","https://x.com/boffincoders","https://www.instagram.com/boffincoders/","https://www.facebook.com/boffincoders","https://github.com/boffincoders"]},
+{"@type":"WebSite","@id":"https://boffincoders.github.io/#website","name":"Open source by Boffin Coders","url":"https://boffincoders.github.io/","publisher":{"@id":"https://boffincoders.com/#organization"}},
+{"@type":"CollectionPage","@id":"https://boffincoders.github.io/#page","name":"Open source by Boffin Coders","url":"https://boffincoders.github.io/","description":"MIT-licensed packages from Boffin Coders: financial ratios for TypeScript, an Akamai NetStorage client and CLI, and a persistent task queue for Dart and Flutter.","isPartOf":{"@id":"https://boffincoders.github.io/#website"},"about":{"@id":"https://boffincoders.com/#organization"},"primaryImageOfPage":"https://boffincoders.github.io/og.png","mainEntity":{"@type":"ItemList","numberOfItems":3,"itemListElement":[
+{"@type":"ListItem","position":1,"item":{"@type":"SoftwareSourceCode","name":"fundamental-analysis","description":"Financial ratios and fundamental analysis for JavaScript and TypeScript.","url":"https://boffincoders.github.io/fundamental-analysis/","codeRepository":"https://github.com/boffincoders/fundamental-analysis","programmingLanguage":"TypeScript","runtimePlatform":"Node.js","license":"https://opensource.org/licenses/MIT","author":{"@id":"https://boffincoders.com/#organization"},"maintainer":{"@id":"https://boffincoders.com/#organization"}}},
+{"@type":"ListItem","position":2,"item":{"@type":"SoftwareSourceCode","name":"ts-netstorageapi-akamai","description":"TypeScript client and CLI for the Akamai NetStorage HTTP API.","url":"https://boffincoders.github.io/akamai-netstorageapi-typescript/","codeRepository":"https://github.com/boffincoders/akamai-netstorageapi-typescript","programmingLanguage":"TypeScript","runtimePlatform":"Node.js","license":"https://opensource.org/licenses/MIT","author":{"@id":"https://boffincoders.com/#organization"},"maintainer":{"@id":"https://boffincoders.com/#organization"}}},
+{"@type":"ListItem","position":3,"item":{"@type":"SoftwareSourceCode","name":"durable_queue","description":"Persistent, retryable tasks for Dart and Flutter.","url":"https://boffincoders.github.io/durable_queue/","codeRepository":"https://github.com/boffincoders/durable_queue","programmingLanguage":"Dart","runtimePlatform":"Flutter","license":"https://opensource.org/licenses/MIT","author":{"@id":"https://boffincoders.com/#organization"},"maintainer":{"@id":"https://boffincoders.com/#organization"}}}
+]}}]}</script>
+<meta name="theme-color" content="#0d0d0d" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<link rel="icon" href="/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="/style.css">
+<script>try{var t=localStorage.getItem("bc-theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+<a class="brand" href="/" aria-label="Open source by Boffin Coders home"><img class="brand-mark" src="/brand/bc-gold.png" alt="Boffin Coders" width="30" height="30"><span class="brand-text"><span class="brand-name">Open source</span><span class="brand-by">by Boffin Coders</span></span></a>
+<div class="top-actions">
+<button class="icon-btn" type="button" data-theme-toggle aria-label="Toggle dark mode"><svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg></button>
+<a class="icon-btn" href="https://github.com/boffincoders" aria-label="Boffin Coders on GitHub"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></a>
+</div>
+</header>
+<main id="main">
+<section class="hero">
+<p class="eyebrow">Open source · MIT</p>
+<h1>Open source by <span class="accent">Boffin Coders</span></h1>
+<p class="lead">Packages for TypeScript, Dart and Flutter that we build and maintain under the MIT licence, each with full documentation, plus the Flutter and React Native demos we have published along the way.</p>
+<div class="hero-actions"><a class="btn primary" href="#packages">See the packages</a><a class="btn" href="https://github.com/boffincoders">All projects on GitHub</a></div>
+</section>
+
+<section class="home-section" id="packages" aria-labelledby="packages-title">
+<h2 id="packages-title">Packages</h2>
+<p class="lead">Published on npm and pub.dev, typed, tested and documented.</p>
+<div class="packages">
+
+<article class="package">
+<a class="package-shot" href="https://boffincoders.github.io/fundamental-analysis/" tabindex="-1" aria-hidden="true"><img src="https://boffincoders.github.io/fundamental-analysis/og.png" alt="" width="1200" height="630" decoding="async"></a>
+<div class="package-body">
+<span class="pill">TypeScript</span>
+<h3><a href="https://boffincoders.github.io/fundamental-analysis/">fundamental-analysis</a></h3>
+<p>Financial ratios and fundamental analysis for JavaScript and TypeScript.</p>
+<p class="more">56 metrics with plain-English ratings; null, never NaN. Zero dependencies.</p>
+<p class="install"><code>npm install fundamental-analysis</code></p>
+<div class="package-actions"><a class="btn primary small" href="https://boffincoders.github.io/fundamental-analysis/">Read the docs</a><a class="btn small" href="https://boffincoders.github.io/fundamental-analysis/try/">Try it on 20 US companies</a></div>
+<p class="package-links"><a href="https://github.com/boffincoders/fundamental-analysis">GitHub</a><a href="https://www.npmjs.com/package/fundamental-analysis">npm</a></p>
+</div>
+</article>
+
+<article class="package">
+<a class="package-shot" href="https://boffincoders.github.io/akamai-netstorageapi-typescript/" tabindex="-1" aria-hidden="true"><img src="https://boffincoders.github.io/akamai-netstorageapi-typescript/og.png" alt="" width="1200" height="630" decoding="async"></a>
+<div class="package-body">
+<span class="pill">TypeScript</span>
+<h3><a href="https://boffincoders.github.io/akamai-netstorageapi-typescript/">ts-netstorageapi-akamai</a></h3>
+<p>TypeScript client and CLI for the Akamai NetStorage HTTP API.</p>
+<p class="more">Upload, download and manage files with promises or callbacks, and a type for every response.</p>
+<p class="install"><code>npm install ts-netstorageapi-akamai</code></p>
+<div class="package-actions"><a class="btn primary small" href="https://boffincoders.github.io/akamai-netstorageapi-typescript/">Read the docs</a></div>
+<p class="package-links"><a href="https://github.com/boffincoders/akamai-netstorageapi-typescript">GitHub</a><a href="https://www.npmjs.com/package/ts-netstorageapi-akamai">npm</a></p>
+</div>
+</article>
+
+<article class="package">
+<a class="package-shot" href="https://boffincoders.github.io/durable_queue/" tabindex="-1" aria-hidden="true"><img src="https://boffincoders.github.io/durable_queue/og.png" alt="" width="1200" height="630" decoding="async"></a>
+<div class="package-body">
+<span class="pill">Dart / Flutter</span>
+<h3><a href="https://boffincoders.github.io/durable_queue/">durable_queue</a></h3>
+<p>Persistent, retryable tasks for Dart and Flutter.</p>
+<p class="more">Tasks survive crashes and restarts, retry with backoff and wait for the network.</p>
+<p class="install"><code>dart pub add durable_queue</code></p>
+<div class="package-actions"><a class="btn primary small" href="https://boffincoders.github.io/durable_queue/">Read the docs</a></div>
+<p class="package-links"><a href="https://github.com/boffincoders/durable_queue">GitHub</a><a href="https://pub.dev/packages/durable_queue">pub.dev</a></p>
+</div>
+</article>
+
+</div>
+</section>
+
+<section class="home-section" id="demos" aria-labelledby="demos-title">
+<h2 id="demos-title">Demos and UI kits</h2>
+<p class="lead">Open-source Flutter and React Native apps and UI challenges, free to read and reuse.</p>
+<div class="demos">
+<div class="demo"><div class="demo-head"><a class="demo-name" href="https://github.com/boffincoders/HospitalManagementDashboard">HospitalManagementDashboard</a><span class="stars" title="GitHub stars"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 .9l2.2 4.5 4.9.7-3.6 3.5.9 4.9L8 12.2l-4.4 2.3.9-4.9L.9 6.1l4.9-.7z"/></svg><span data-stars="HospitalManagementDashboard">24</span><span class="sr-only"> stars</span></span></div><p>Flutter Web Hospital Management Responsive Dashboard</p><small>Flutter web</small></div>
+<div class="demo"><div class="demo-head"><a class="demo-name" href="https://github.com/boffincoders/Flutter-Music-Player">Flutter-Music-Player</a><span class="stars" title="GitHub stars"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 .9l2.2 4.5 4.9.7-3.6 3.5.9 4.9L8 12.2l-4.4 2.3.9-4.9L.9 6.1l4.9-.7z"/></svg><span data-stars="Flutter-Music-Player">22</span><span class="sr-only"> stars</span></span></div><p>Flutter Music Player - CD Animation Challenge</p><small>Flutter</small></div>
+<div class="demo"><div class="demo-head"><a class="demo-name" href="https://github.com/boffincoders/Flutter-UI-Kits">Flutter-UI-Kits</a><span class="stars" title="GitHub stars"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 .9l2.2 4.5 4.9.7-3.6 3.5.9 4.9L8 12.2l-4.4 2.3.9-4.9L.9 6.1l4.9-.7z"/></svg><span data-stars="Flutter-UI-Kits">16</span><span class="sr-only"> stars</span></span></div><p>Flutter UI Kits for Car Rental App</p><small>Flutter</small></div>
+<div class="demo"><div class="demo-head"><a class="demo-name" href="https://github.com/boffincoders/budget-tracker-notion-api">budget-tracker-notion-api</a><span class="stars" title="GitHub stars"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 .9l2.2 4.5 4.9.7-3.6 3.5.9 4.9L8 12.2l-4.4 2.3.9-4.9L.9 6.1l4.9-.7z"/></svg><span data-stars="budget-tracker-notion-api">11</span><span class="sr-only"> stars</span></span></div><p>Budget Tracker in Flutter</p><small>Flutter · Notion API</small></div>
+<div class="demo"><div class="demo-head"><a class="demo-name" href="https://github.com/boffincoders/rn-grocery-ui-challange">rn-grocery-ui-challange</a><span class="stars" title="GitHub stars"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 .9l2.2 4.5 4.9.7-3.6 3.5.9 4.9L8 12.2l-4.4 2.3.9-4.9L.9 6.1l4.9-.7z"/></svg><span data-stars="rn-grocery-ui-challange">9</span><span class="sr-only"> stars</span></span></div><p>Grocery App UI Design in React Native</p><small>React Native</small></div>
+<div class="demo"><div class="demo-head"><a class="demo-name" href="https://github.com/boffincoders/flutter_scale_ruler">flutter_scale_ruler</a><span class="stars" title="GitHub stars"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 .9l2.2 4.5 4.9.7-3.6 3.5.9 4.9L8 12.2l-4.4 2.3.9-4.9L.9 6.1l4.9-.7z"/></svg><span data-stars="flutter_scale_ruler">7</span><span class="sr-only"> stars</span></span></div><p>A simple scale ruler for measurement in feet and inches.</p><small>Flutter package · <a href="https://pub.dev/packages/flutter_scale_ruler">pub.dev</a></small></div>
+</div>
+<p class="section-note">Star counts come from GitHub.</p>
+</section>
+
+<section class="home-section" id="about">
+<section class="built-by" aria-labelledby="about-title">
+<img src="/brand/bc-gold.png" alt="Boffin Coders logo" width="56" height="56">
+<div>
+<h2 id="about-title">Built by Boffin Coders</h2>
+<p>We design and build websites, web applications and mobile apps, and run their SEO, for businesses and agencies.</p>
+<p>We maintain these packages as open source. If you need a Flutter app, a Node.js backend or a team to take a project from design to launch, we would like to hear about it.</p>
+<p class="built-by-actions"><a class="btn primary" href="https://boffincoders.com/services?utm_source=github_hub&amp;utm_medium=home&amp;utm_campaign=open_source">Our services</a><a class="btn" href="https://boffincoders.com/hire/flutter-developers?utm_source=github_hub&amp;utm_medium=home&amp;utm_campaign=open_source">Hire Flutter developers</a><a class="btn" href="https://boffincoders.com/hire/nodejs-developers?utm_source=github_hub&amp;utm_medium=home&amp;utm_campaign=open_source">Hire Node.js developers</a><a class="btn" href="https://boffincoders.com/contact-us?utm_source=github_hub&amp;utm_medium=home&amp;utm_campaign=open_source">Contact us</a></p>
+</div>
+</section>
+</section>
+</main>
+<footer>
+<a class="footer-brand" href="https://boffincoders.com/?utm_source=github_hub&amp;utm_medium=footer&amp;utm_campaign=open_source"><img src="/brand/bc-gold.png" alt="Boffin Coders" width="36" height="36"><span>Built and maintained by Boffin Coders</span></a>
+<p>Docs: <a href="https://boffincoders.github.io/fundamental-analysis/">fundamental-analysis</a> · <a href="https://boffincoders.github.io/akamai-netstorageapi-typescript/">ts-netstorageapi-akamai</a> · <a href="https://boffincoders.github.io/durable_queue/">durable_queue</a></p>
+<p>MIT licence · <a href="https://github.com/boffincoders">github.com/boffincoders</a></p>
+</footer>
+<script src="/site.js"></script>
+</body>
+</html>

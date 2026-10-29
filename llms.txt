@@ -1,0 +1,22 @@
+# Open source by Boffin Coders
+
+> MIT-licensed packages for TypeScript, Dart and Flutter, built and maintained by Boffin Coders, each with full documentation.
+
+## Packages
+
+- [fundamental-analysis](https://boffincoders.github.io/fundamental-analysis/): Financial ratios and fundamental analysis for JavaScript and TypeScript. 56 metrics with plain-English ratings; null, never NaN. Zero dependencies. Source: https://github.com/boffincoders/fundamental-analysis · npm: https://www.npmjs.com/package/fundamental-analysis · Demo: https://boffincoders.github.io/fundamental-analysis/try/
+- [ts-netstorageapi-akamai](https://boffincoders.github.io/akamai-netstorageapi-typescript/): TypeScript client and CLI for the Akamai NetStorage HTTP API. Source: https://github.com/boffincoders/akamai-netstorageapi-typescript · npm: https://www.npmjs.com/package/ts-netstorageapi-akamai
+- [durable_queue](https://boffincoders.github.io/durable_queue/): Persistent, retryable tasks for Dart and Flutter. Source: https://github.com/boffincoders/durable_queue · pub.dev: https://pub.dev/packages/durable_queue
+
+## Demos and UI kits
+
+- [HospitalManagementDashboard](https://github.com/boffincoders/HospitalManagementDashboard): Flutter web hospital management responsive dashboard
+- [Flutter-Music-Player](https://github.com/boffincoders/Flutter-Music-Player): Flutter music player, CD animation challenge
+- [Flutter-UI-Kits](https://github.com/boffincoders/Flutter-UI-Kits): Flutter UI kits for a car rental app
+- [budget-tracker-notion-api](https://github.com/boffincoders/budget-tracker-notion-api): Budget tracker in Flutter using the Notion API
+- [rn-grocery-ui-challange](https://github.com/boffincoders/rn-grocery-ui-challange): Grocery app UI design in React Native
+- [flutter_scale_ruler](https://github.com/boffincoders/flutter_scale_ruler): A simple scale ruler for measurement in feet and inches (https://pub.dev/packages/flutter_scale_ruler)
+
+## About
+
+Maintained by Boffin Coders (https://boffincoders.com). We design and build websites, web applications and mobile apps, and run their SEO, for businesses and agencies.

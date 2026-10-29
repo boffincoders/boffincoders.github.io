@@ -1,0 +1,4 @@
+# GitHub Pages serves this repository as plain static files. Folders starting
+# with "_" (the social card source in _og/) are not published.
+exclude:
+  - README.md
