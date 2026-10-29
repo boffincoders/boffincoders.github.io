@@ -10,4 +10,6 @@ Source of [boffincoders.github.io](https://boffincoders.github.io/), the home pa
 
 The site is plain static files served from the root of `main`, with no build step. Because it sits at the domain root, its `robots.txt` lists the sitemaps of every project site under `boffincoders.github.io`.
 
+ts-netstorageapi-akamai is an independent open-source project, not affiliated with or endorsed by Akamai Technologies, Inc. Akamai and NetStorage are trademarks of Akamai Technologies, Inc.
+
 To change the social preview image, edit `_og/card.html` and run `sh _og/render.sh`.
