@@ -1,22 +1,42 @@
 # Open source by Boffin Coders
 
-> MIT-licensed packages for TypeScript, Dart and Flutter, built and maintained by Boffin Coders, each with full documentation.
+> Boffin Coders designs and builds websites, web applications and mobile apps for businesses, and works as a white-label development partner for agencies. This hub lists the open-source packages it builds and maintains: fundamental-analysis (financial ratios for JavaScript and TypeScript), ts-netstorageapi-akamai (a TypeScript client and CLI for Akamai NetStorage) and durable_queue (persistent, retryable tasks for Dart and Flutter). All are MIT licensed and documented.
 
 ## Packages
 
-- [fundamental-analysis](https://boffincoders.github.io/fundamental-analysis/): Financial ratios and fundamental analysis for JavaScript and TypeScript. 56 metrics with plain-English ratings; null, never NaN. Zero dependencies. Source: https://github.com/boffincoders/fundamental-analysis · npm: https://www.npmjs.com/package/fundamental-analysis · Demo: https://boffincoders.github.io/fundamental-analysis/try/
-- [ts-netstorageapi-akamai](https://boffincoders.github.io/akamai-netstorageapi-typescript/): TypeScript client and CLI for the Akamai NetStorage HTTP API. Source: https://github.com/boffincoders/akamai-netstorageapi-typescript · npm: https://www.npmjs.com/package/ts-netstorageapi-akamai
-- [durable_queue](https://boffincoders.github.io/durable_queue/): Persistent, retryable tasks for Dart and Flutter. Source: https://github.com/boffincoders/durable_queue · pub.dev: https://pub.dev/packages/durable_queue
+- [fundamental-analysis](https://boffincoders.github.io/fundamental-analysis/): Turns financial-statement numbers into valuation, profitability, liquidity, leverage, efficiency and distress-risk metrics (P/E, PEG, EV/EBITDA, ROE, ROIC, Altman Z, Piotroski F-Score, DCF, Graham number, intrinsic value), each with an optional plain-English rating. Inputs that cannot give an honest answer return null, never NaN.
+  - Ecosystem: TypeScript and JavaScript, Node.js 16+ and browsers, zero runtime dependencies. Install: `npm install fundamental-analysis`. Latest version: 1.3.1 (npm).
+  - Docs: https://boffincoders.github.io/fundamental-analysis/ · llms.txt: https://boffincoders.github.io/fundamental-analysis/llms.txt · llms-full.txt: https://boffincoders.github.io/fundamental-analysis/llms-full.txt
+  - Live demo on 20 US companies: https://boffincoders.github.io/fundamental-analysis/try/ · Source: https://github.com/boffincoders/fundamental-analysis · npm: https://www.npmjs.com/package/fundamental-analysis
+- [ts-netstorageapi-akamai](https://boffincoders.github.io/akamai-netstorageapi-typescript/): Typed Node.js client and command-line tool for the Akamai NetStorage HTTP API. Uploads and downloads files or buffers and runs dir, list, du, stat, mkdir, rmdir, rename, symlink, mtime, delete and quick-delete, with promises or callbacks and a type for every response. Based on Akamai's netstorageapi package, with a migration guide.
+  - Ecosystem: TypeScript and JavaScript, Node.js 18+, CommonJS and ESM, 2 runtime dependencies. Install: `npm install ts-netstorageapi-akamai`; CLI: `npx akamai-netstorage`. Latest version: 1.1.1 (npm).
+  - Docs: https://boffincoders.github.io/akamai-netstorageapi-typescript/ · llms.txt: https://boffincoders.github.io/akamai-netstorageapi-typescript/llms.txt · llms-full.txt: https://boffincoders.github.io/akamai-netstorageapi-typescript/llms-full.txt
+  - Source: https://github.com/boffincoders/akamai-netstorageapi-typescript · npm: https://www.npmjs.com/package/ts-netstorageapi-akamai
+- [durable_queue](https://boffincoders.github.io/durable_queue/): Persistent, retryable task execution for Dart and Flutter. Tasks are stored before enqueue returns, retried with backoff across restarts and crashes, wait for the network, and can hand uploads to the operating system so they finish after the app is closed. Companion packages add SQLite, Hive and encrypted storage, Dio, Flutter, connectivity, background-transfer and Workmanager integrations.
+  - Ecosystem: Dart 3 and Flutter on Android, iOS, desktop and the web; the core is pure Dart with no runtime dependencies. Install: `dart pub add durable_queue` (add `durable_queue_sqlite` for storage that survives restarts). Latest version: 0.5.7 (pub.dev).
+  - Docs: https://boffincoders.github.io/durable_queue/ · llms.txt: https://boffincoders.github.io/durable_queue/llms.txt · llms-full.txt: https://boffincoders.github.io/durable_queue/llms-full.txt
+  - Source: https://github.com/boffincoders/durable_queue · pub.dev: https://pub.dev/packages/durable_queue
+
+## FAQ
+
+- Is there a TypeScript client for Akamai NetStorage? Yes: ts-netstorageapi-akamai is a typed Node.js client and CLI for the NetStorage HTTP API, covering uploads, downloads and directory and file actions. Docs: https://boffincoders.github.io/akamai-netstorageapi-typescript/
+- Which Flutter package keeps uploads alive when the app is closed? durable_queue with its durable_queue_transfer package hands uploads to the operating system, which finishes them after the app is minimised or closed, and the queue retries anything that fails. Docs: https://boffincoders.github.io/durable_queue/
+- How do I make Flutter background tasks survive crashes and wait for the network? durable_queue stores each task before enqueue returns and retries it with backoff after restarts; durable_queue_connectivity holds tasks while the device is offline. Docs: https://boffincoders.github.io/durable_queue/guide/
+- Is there a zero-dependency JavaScript library for financial ratios? Yes: fundamental-analysis has no runtime dependencies and calculates valuation, profitability, liquidity, leverage and risk ratios with plain-English ratings. Docs: https://boffincoders.github.io/fundamental-analysis/
+- Can I calculate a Piotroski F-Score, Altman Z-score or DCF value in TypeScript? Yes, fundamental-analysis includes all three, plus the Graham number and intrinsic value. Its ratings are generic rules of thumb, not investment advice. Docs: https://boffincoders.github.io/fundamental-analysis/api-docs/
+- Who maintains these packages? Boffin Coders (https://boffincoders.com), a web and mobile development company that builds websites, web applications and mobile apps for businesses and works white-label for agencies.
 
 ## Demos and UI kits
 
-- [HospitalManagementDashboard](https://github.com/boffincoders/HospitalManagementDashboard): Flutter web hospital management responsive dashboard
-- [Flutter-Music-Player](https://github.com/boffincoders/Flutter-Music-Player): Flutter music player, CD animation challenge
-- [Flutter-UI-Kits](https://github.com/boffincoders/Flutter-UI-Kits): Flutter UI kits for a car rental app
-- [budget-tracker-notion-api](https://github.com/boffincoders/budget-tracker-notion-api): Budget tracker in Flutter using the Notion API
-- [rn-grocery-ui-challange](https://github.com/boffincoders/rn-grocery-ui-challange): Grocery app UI design in React Native
-- [flutter_scale_ruler](https://github.com/boffincoders/flutter_scale_ruler): A simple scale ruler for measurement in feet and inches (https://pub.dev/packages/flutter_scale_ruler)
+- [HospitalManagementDashboard](https://github.com/boffincoders/HospitalManagementDashboard): responsive hospital management dashboard in Flutter web
+- [Flutter-Music-Player](https://github.com/boffincoders/Flutter-Music-Player): Flutter music player with a CD animation
+- [Flutter-UI-Kits](https://github.com/boffincoders/Flutter-UI-Kits): Flutter UI kit for a car rental app
+- [flutter_scale_ruler](https://pub.dev/packages/flutter_scale_ruler): Flutter scale ruler for feet and inches
+- More: https://github.com/boffincoders
 
-## About
+## Boffin Coders
 
-Maintained by Boffin Coders (https://boffincoders.com). We design and build websites, web applications and mobile apps, and run their SEO, for businesses and agencies.
+- Website: https://boffincoders.com
+- Open source: https://boffincoders.com/open-source
+- Services: https://boffincoders.com/services
+- Contact: https://boffincoders.com/contact-us
