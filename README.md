@@ -7,6 +7,7 @@ Source of [boffincoders.github.io](https://boffincoders.github.io/), the home pa
 | [fundamental-analysis](https://github.com/boffincoders/fundamental-analysis) | Financial ratios and fundamental analysis for JavaScript and TypeScript | [Docs](https://boffincoders.github.io/fundamental-analysis/) |
 | [ts-netstorageapi-akamai](https://github.com/boffincoders/akamai-netstorageapi-typescript) | TypeScript client and CLI for the Akamai NetStorage HTTP API | [Docs](https://boffincoders.github.io/akamai-netstorageapi-typescript/) |
 | [durable_queue](https://github.com/boffincoders/durable_queue) | Persistent, retryable tasks for Dart and Flutter | [Docs](https://boffincoders.github.io/durable_queue/) |
+| [merry_go_round_carousel](https://github.com/boffincoders/merry_go_round_carousel) | A spinning 3D merry-go-round carousel widget for Flutter | [pub.dev](https://pub.dev/packages/merry_go_round_carousel) |
 
 The site is plain static files served from the root of `main`, with no build step. Because it sits at the domain root, its `robots.txt` lists the sitemaps of every project site under `boffincoders.github.io`.
 

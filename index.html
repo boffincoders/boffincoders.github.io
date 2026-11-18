@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Open source by Boffin Coders: TypeScript, Dart and Flutter packages</title>
-<meta name="description" content="MIT-licensed packages from Boffin Coders: financial ratios for TypeScript, an Akamai NetStorage client and CLI, and a persistent task queue for Dart and Flutter.">
+<meta name="description" content="MIT-licensed packages from Boffin Coders: financial ratios for TypeScript, an Akamai NetStorage client, a Dart and Flutter task queue and a 3D Flutter carousel.">
 <link rel="canonical" href="https://boffincoders.github.io/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Open source by Boffin Coders">
-<meta property="og:description" content="MIT-licensed packages from Boffin Coders: financial ratios for TypeScript, an Akamai NetStorage client and CLI, and a persistent task queue for Dart and Flutter.">
+<meta property="og:description" content="MIT-licensed packages from Boffin Coders: financial ratios for TypeScript, an Akamai NetStorage client, a Dart and Flutter task queue and a 3D Flutter carousel.">
 <meta property="og:url" content="https://boffincoders.github.io/">
 <meta property="og:site_name" content="Open source by Boffin Coders">
 <meta property="og:image" content="https://boffincoders.github.io/og.png">
@@ -23,10 +23,11 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[
 {"@type":"Organization","@id":"https://boffincoders.com/#organization","name":"Boffin Coders","url":"https://boffincoders.com","logo":"https://boffincoders.github.io/brand/bc-gold.png","slogan":"We design and build websites, web applications and mobile apps, and run their SEO, for businesses and agencies.","description":"We design and build websites, web applications and mobile apps, and run their SEO, for businesses and agencies.","sameAs":["https://www.linkedin.com/company/boffincoders/","https://x.com/boffincoders","https://www.instagram.com/boffincoders/","https://www.facebook.com/boffincoders","https://github.com/boffincoders"]},
 {"@type":"WebSite","@id":"https://boffincoders.github.io/#website","name":"Open source by Boffin Coders","url":"https://boffincoders.github.io/","publisher":{"@id":"https://boffincoders.com/#organization"}},
-{"@type":"CollectionPage","@id":"https://boffincoders.github.io/#page","name":"Open source by Boffin Coders","url":"https://boffincoders.github.io/","description":"MIT-licensed packages from Boffin Coders: financial ratios for TypeScript, an Akamai NetStorage client and CLI, and a persistent task queue for Dart and Flutter.","isPartOf":{"@id":"https://boffincoders.github.io/#website"},"about":{"@id":"https://boffincoders.com/#organization"},"primaryImageOfPage":"https://boffincoders.github.io/og.png","mainEntity":{"@type":"ItemList","numberOfItems":3,"itemListElement":[
+{"@type":"CollectionPage","@id":"https://boffincoders.github.io/#page","name":"Open source by Boffin Coders","url":"https://boffincoders.github.io/","description":"MIT-licensed packages from Boffin Coders: financial ratios for TypeScript, an Akamai NetStorage client, a Dart and Flutter task queue and a 3D Flutter carousel.","isPartOf":{"@id":"https://boffincoders.github.io/#website"},"about":{"@id":"https://boffincoders.com/#organization"},"primaryImageOfPage":"https://boffincoders.github.io/og.png","mainEntity":{"@type":"ItemList","numberOfItems":4,"itemListElement":[
 {"@type":"ListItem","position":1,"item":{"@type":"SoftwareSourceCode","name":"fundamental-analysis","description":"Financial ratios and fundamental analysis for JavaScript and TypeScript.","url":"https://boffincoders.github.io/fundamental-analysis/","codeRepository":"https://github.com/boffincoders/fundamental-analysis","programmingLanguage":"TypeScript","runtimePlatform":"Node.js","license":"https://opensource.org/licenses/MIT","author":{"@id":"https://boffincoders.com/#organization"},"maintainer":{"@id":"https://boffincoders.com/#organization"}}},
 {"@type":"ListItem","position":2,"item":{"@type":"SoftwareSourceCode","name":"ts-netstorageapi-akamai","description":"TypeScript client and CLI for the Akamai NetStorage HTTP API.","url":"https://boffincoders.github.io/akamai-netstorageapi-typescript/","codeRepository":"https://github.com/boffincoders/akamai-netstorageapi-typescript","programmingLanguage":"TypeScript","runtimePlatform":"Node.js","license":"https://opensource.org/licenses/MIT","author":{"@id":"https://boffincoders.com/#organization"},"maintainer":{"@id":"https://boffincoders.com/#organization"}}},
-{"@type":"ListItem","position":3,"item":{"@type":"SoftwareSourceCode","name":"durable_queue","description":"Persistent, retryable tasks for Dart and Flutter.","url":"https://boffincoders.github.io/durable_queue/","codeRepository":"https://github.com/boffincoders/durable_queue","programmingLanguage":"Dart","runtimePlatform":"Flutter","license":"https://opensource.org/licenses/MIT","author":{"@id":"https://boffincoders.com/#organization"},"maintainer":{"@id":"https://boffincoders.com/#organization"}}}
+{"@type":"ListItem","position":3,"item":{"@type":"SoftwareSourceCode","name":"durable_queue","description":"Persistent, retryable tasks for Dart and Flutter.","url":"https://boffincoders.github.io/durable_queue/","codeRepository":"https://github.com/boffincoders/durable_queue","programmingLanguage":"Dart","runtimePlatform":"Flutter","license":"https://opensource.org/licenses/MIT","author":{"@id":"https://boffincoders.com/#organization"},"maintainer":{"@id":"https://boffincoders.com/#organization"}}},
+{"@type":"ListItem","position":4,"item":{"@type":"SoftwareSourceCode","name":"merry_go_round_carousel","description":"A spinning 3D merry-go-round carousel widget for Flutter.","url":"https://pub.dev/packages/merry_go_round_carousel","codeRepository":"https://github.com/boffincoders/merry_go_round_carousel","programmingLanguage":"Dart","runtimePlatform":"Flutter","license":"https://opensource.org/licenses/MIT","author":{"@id":"https://boffincoders.com/#organization"},"maintainer":{"@id":"https://boffincoders.com/#organization"}}}
 ]}}]}</script>
 <meta name="theme-color" content="#0d0d0d" media="(prefers-color-scheme: dark)">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
@@ -95,6 +96,18 @@
 <p class="install"><code>dart pub add durable_queue</code></p>
 <div class="package-actions"><a class="btn primary small" href="https://boffincoders.github.io/durable_queue/">Read the docs</a></div>
 <p class="package-links"><a href="https://github.com/boffincoders/durable_queue">GitHub</a><a href="https://pub.dev/packages/durable_queue"><span class="sr-only">durable_queue on </span>pub.dev</a><a href="https://boffincoders.com/open-source/durable-queue?utm_source=github_hub&amp;utm_medium=home&amp;utm_campaign=open_source">About this package</a></p>
+</div>
+</article>
+
+<article class="package">
+<a class="package-shot" href="https://pub.dev/packages/merry_go_round_carousel" tabindex="-1" aria-hidden="true"><img src="/shots/merry_go_round_carousel.webp" alt="" width="560" height="294" loading="lazy" decoding="async"></a>
+<div class="package-body">
+<span class="pill">Flutter</span>
+<h3><a href="https://pub.dev/packages/merry_go_round_carousel">merry_go_round_carousel</a></h3>
+<p>A spinning 3D merry-go-round carousel widget for Flutter.</p>
+<p class="more">Swipe with momentum, snap to items, tap one to bring it forward, auto-rotate, or drive it with a controller.</p>
+<p class="install"><code>flutter pub add merry_go_round_carousel</code></p>
+<p class="package-links"><a href="https://github.com/boffincoders/merry_go_round_carousel">GitHub</a><a href="https://pub.dev/packages/merry_go_round_carousel"><span class="sr-only">merry_go_round_carousel on </span>pub.dev</a></p>
 </div>
 </article>
 

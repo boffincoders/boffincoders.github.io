@@ -1,6 +1,6 @@
 # Open source by Boffin Coders
 
-> Boffin Coders designs and builds websites, web applications and mobile apps for businesses, and works as a white-label development partner for agencies. This hub lists the open-source packages it builds and maintains: fundamental-analysis (financial ratios for JavaScript and TypeScript), ts-netstorageapi-akamai (a TypeScript client and CLI for Akamai NetStorage) and durable_queue (persistent, retryable tasks for Dart and Flutter). All are MIT licensed and documented.
+> Boffin Coders designs and builds websites, web applications and mobile apps for businesses, and works as a white-label development partner for agencies. This hub lists the open-source packages it builds and maintains: fundamental-analysis (financial ratios for JavaScript and TypeScript), ts-netstorageapi-akamai (a TypeScript client and CLI for Akamai NetStorage), durable_queue (persistent, retryable tasks for Dart and Flutter) and merry_go_round_carousel (a spinning 3D carousel widget for Flutter). All are MIT licensed and documented.
 
 ## Packages
 
@@ -17,6 +17,10 @@
   - Ecosystem: Dart 3 and Flutter on Android, iOS, desktop and the web; the core is pure Dart with no runtime dependencies. Install: `dart pub add durable_queue` (add `durable_queue_sqlite` for storage that survives restarts). Latest version: 0.5.7 (pub.dev).
   - Docs: https://boffincoders.github.io/durable_queue/ · llms.txt: https://boffincoders.github.io/durable_queue/llms.txt · llms-full.txt: https://boffincoders.github.io/durable_queue/llms-full.txt
   - Source: https://github.com/boffincoders/durable_queue · pub.dev: https://pub.dev/packages/durable_queue
+- [merry_go_round_carousel](https://pub.dev/packages/merry_go_round_carousel): A spinning 3D merry-go-round carousel widget for Flutter. Users spin a tilted ring of items with a swipe; it keeps momentum, snaps to the nearest item, brings a tapped item forward and can auto-rotate. Has a controller, screen reader and reduced-motion support, and keyboard and mouse-wheel input.
+  - Ecosystem: Flutter 3.10+ on Android, iOS, web and desktop; no dependencies beyond Flutter. Install: `flutter pub add merry_go_round_carousel`. Latest version: 0.2.0 (pub.dev).
+  - Docs (README and API reference on pub.dev): https://pub.dev/documentation/merry_go_round_carousel/latest/
+  - Source: https://github.com/boffincoders/merry_go_round_carousel · pub.dev: https://pub.dev/packages/merry_go_round_carousel
 
 ## FAQ
 

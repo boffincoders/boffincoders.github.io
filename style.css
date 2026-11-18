@@ -125,7 +125,8 @@ p { margin: 0 0 1rem; }
 .home-section > .lead { text-align: center; max-width: 720px; margin: 0 auto 28px; }
 
 /* Package cards */
-.packages { display: grid; gap: 18px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+/* Two columns, so four packages fill two even rows. */
+.packages { display: grid; gap: 18px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .package {
   display: flex; flex-direction: column; overflow: hidden;
   border: 1px solid var(--border); border-radius: var(--radius);
@@ -140,8 +141,11 @@ p { margin: 0 0 1rem; }
 .package p { color: var(--text-soft); font-size: 0.95rem; margin-bottom: 0.7rem; }
 .package .more { color: var(--text-faint); font-size: 0.9rem; }
 .package .install { margin: 4px 0 16px; }
+.package .install code { display: inline-block; max-width: 100%; overflow-wrap: anywhere; }
 .package-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; }
 .package-links { display: flex; flex-wrap: wrap; gap: 4px 16px; margin: 14px 0 0; font-size: 0.92rem; }
+/* A package without a docs site has no buttons; keep its links at the bottom. */
+.install + .package-links { margin-top: auto; }
 /* Between phone and desktop widths each card puts its image beside the text. */
 @media (max-width: 900px) {
   .packages { grid-template-columns: minmax(0, 1fr); }
